@@ -21,6 +21,11 @@ app.get('/getAll',(req,res)=>{
     res.send('this endpoint will send all the data')
 })
 
+
+app.get('/TestAll',(req,res)=>{
+    res.send('this will test the endpoint');
+})
+
 // Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
