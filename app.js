@@ -17,6 +17,10 @@ app.get('/', (req, res) => {
   res.send('Hello, World!');
 });
 
+app.get('/getAll',(req,res)=>{
+    res.send('this endpoint will send all the data')
+})
+
 // Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
