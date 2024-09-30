@@ -31,8 +31,13 @@ app.get('TestAll1',(req,res)=>{
     res.send('api TestAll1');
 })
 
+app.get('/faraz',(req,res)=>{
+  res.status(200).send("Welcome to the Remote Machine")
+})
+
 // Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+``
