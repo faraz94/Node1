@@ -32,8 +32,14 @@ app.get('TestAll1',(req,res)=>{
 })
 
 app.get('/faraz',(req,res)=>{
-  res.status(200).send("Welcome to the Remote Machine")
+  res.status(200).send("Welcome to test Jenkins Flow");
 })
+
+
+app.get('/jenkins',(req,res)=>{
+  res.status(200).send("Jenkins pipeline is created");
+})
+
 
 // Start the server
 const PORT = process.env.PORT || 3000;
